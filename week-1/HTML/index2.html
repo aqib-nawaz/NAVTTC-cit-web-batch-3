@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th> Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Abdus Samad</td>
+                <td>Swabi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Aqib</td>
+                <td>Dera Ismail Khan</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+    <h2>HTML Form</h2>
+    <form action="">
+        <fieldset >
+            <legend>Student Data</legend>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" pattern="[A-Za-z]{3}">
+
+        </fieldset>
+<br>
+<br>
+        <fieldset>
+            <legend>Interest Field</legend>
+            
+            <label for="web"> Web Development</label>
+            <input type="checkbox" name="web" id="web">
+            <br>
+            <label for="android">Android App Development</label>
+            <input type="checkbox" name="android" id="android">
+
+            <br><hr>
+            <label for="cs">Computer Science</label>
+            <input type="radio" name="course" id="cs" value="cs">
+
+            <label for="it">Information Technology</label>
+            <input type="radio" name="course" id="it" value="it">
+        </fieldset>
+
+        <input type="submit" name="submit" id="btn-submit" value="Submit">
+    </form>
+</body>
+</html>
