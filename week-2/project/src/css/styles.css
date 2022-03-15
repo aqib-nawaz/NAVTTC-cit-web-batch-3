@@ -104,15 +104,15 @@ nav ul li a {
   width: 70px;
   padding: 12px;
   text-align: center;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   vertical-align: middle;
   color: #cc218c;
 }
 
 nav ul li a:hover {
   background-color: #baebff;
-  border-radius: 4px;
-}
+  /* border-radius: 4px; */
+} 
 
 /* 
 ==========================================================
