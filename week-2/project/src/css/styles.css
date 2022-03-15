@@ -170,9 +170,11 @@ Product Section Styling
 div.products{
     /* background-color: #d2faff; */
     width: 75%;
+    height: 100vh;
     float: right;
     color: #5c5c5c;
     font-size: 14px;
+    background-color: rgba(235, 235, 235, 0.288);
 }
 div.products .card{
     float: left;
