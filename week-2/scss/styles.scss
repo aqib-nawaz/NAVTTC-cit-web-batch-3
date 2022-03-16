@@ -1,0 +1,45 @@
+
+@import "./partials/variables";
+@import "./partials/settings";
+
+$fontWeight: bold;
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 20px;
+    &:hover{
+        border: 1px solid red;
+    }
+}
+.button2{
+    @extend button; //Inheritance
+    color: red; //Overriding
+    font-weight: $fontWeight; //Variable
+}
+p{ 
+    @include para(blue); //Using Mixin
+}
+h1{
+    color: $secondaryColor;
+}
+// div{
+//     display: flex;
+//     justify-content: center;
+// }
+
+nav{
+    width: 100%;
+    ul{
+        display: inline-block;
+        li{
+            display: inline-block;
+            a{
+                text-decoration: none;
+                &:hover{
+                    color: $secondaryColor; //Partials
+                }
+            }
+        }
+    }
+}

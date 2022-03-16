@@ -1,0 +1,5 @@
+@mixin para($color:black) {
+    color: $color;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}

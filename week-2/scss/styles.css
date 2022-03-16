@@ -1,0 +1,46 @@
+button, .button2 {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 20px;
+}
+
+button:hover, .button2:hover {
+  border: 1px solid red;
+}
+
+.button2 {
+  color: red;
+  font-weight: bold;
+}
+
+p {
+  color: blue;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #f5a8a8f4;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f5a8a8f4;
+}
+/*# sourceMappingURL=styles.css.map */
