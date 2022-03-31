@@ -49,11 +49,38 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus eius et, numquam aliquam omnis ut
           aspernatur, expedita temporibus ex necessitatibus consequuntur id dignissimos minima mollitia dolor deleniti
           eos? Quasi, voluptas!</p>
-          <button class="btn btn-primary d-block">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enroll">
             Enroll Now
           </button>
-      </div>
+          <!-- model -->
+          <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="enrollLabel">Enroll Now</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
       <img src="./assets/images/developer2.svg" class="img-fluid ms-auto d-sm-inline d-none" width="250px" height="250" alt="">
+    </div>
     </div>
     
   </section>
