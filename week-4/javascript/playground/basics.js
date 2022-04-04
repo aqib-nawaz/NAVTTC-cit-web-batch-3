@@ -22,4 +22,21 @@ if (marks >= 80) {
 
 (marks > 30) ? console.log("Pass") : console.log("You are Fail");
 
+// switch case  
+switch (marks) {
+    case 10:
+        console.log("Equal to 10")
+        break;
+    case 20:
+        console.log("Equal to 20")
+        break;
+    case 30:
+        console.log("Equal to 30")
+        break;
+
+    default:
+        console.log("Not equal to 10, 20, 30");
+}
+
+
 
