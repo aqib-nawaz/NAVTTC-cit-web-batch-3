@@ -18,4 +18,6 @@ if (marks >= 80) {
  console.log("F");
 }
 
-//
+//Template literals
+
+(marks > 30) ? console.log("Pass") : console.log("Fail");
