@@ -102,9 +102,8 @@
 //     friends : ["Aqib", "Hayat"],
 //     address:{
 //       city: "Mardan",
-//       countary: "Pakistan"
-//     }
-  
+//       country: "Pakistan"
+//     } 
 //   }
 
 // ]
@@ -119,3 +118,39 @@
 // }
 
 
+// Data Serialization
+    // CSV (comma separated values) //it is considered as single datatype
+    // that is why its manipulation is difficult
+        // S.No, Name, Subject, Designation
+        // 1   , Mansoor, C++ , Lecturer
+    
+    //XML (Extended markup language)
+        //<XML>
+            //<emp>
+                // <sno>1</sno>
+                // <age>31</age>
+                // <sub>C+</sub>
+                // <desig>Lecturer</desig>
+            //</emp>
+        //</XML>
+
+    //YAML(Yet Another Modeling Language)
+        // -emp
+        //     -Sno 
+        //         1
+        //     -Age 
+        //         32
+            
+    // JASON (JavaScript Object Notation)
+        // data = [
+        //     {
+        //         "id" : 201,
+        //         "age" : 31,
+        //         "Designation" : "Lecturer"
+        //     },
+        //     {
+        //         "id" : 201,
+        //         "age" : 31,
+        //         "Designation" : "Lecturer"
+        //     }
+        // ]
