@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+
+
+    <script>
+
+       const data = [
+            {
+                "sno":8,
+                "Name": "Aqib",
+                "Sportsman": true,
+                "address": {
+                    "Country": "Pakistan",
+                    "City":"Peshawar"
+                }
+            },
+            {
+                "sno":8,
+                "Name": "Aqib",
+                "address": {
+                    "Country": "Pakistan",
+                    "City":"Peshawar"
+                }
+            }
+        ]
+
+        let obj1 = JSON.stringify(data);
+        console.log(obj1)
+    </script>
+</body>
+</html>
