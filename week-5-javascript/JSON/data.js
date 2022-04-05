@@ -37,7 +37,7 @@ for(let i = 0; i < data.products.length; i++){
 console.log(totalPrice);
 
 // Challage 2 
-// Calculate 20% discount of All Available product 
+// Calculate 20% discount ON All Available product 
 
 for(let i = 0; i < data.products.length; i++){
   if(data.products[i].isAvailable){
