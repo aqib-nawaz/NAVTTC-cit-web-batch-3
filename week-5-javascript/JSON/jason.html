@@ -11,7 +11,7 @@
 
     <script>
 
-       const data = [
+    const data = [
             {
                 "sno":8,
                 "Name": "Aqib",
@@ -23,16 +23,20 @@
             },
             {
                 "sno":8,
-                "Name": "Aqib",
+                "Name": "Abdus Samad",
+                "Sportsman": true,
                 "address": {
                     "Country": "Pakistan",
-                    "City":"Peshawar"
+                    "City":"Swabi"
                 }
             }
         ]
 
         let obj1 = JSON.stringify(data);
         console.log(obj1)
+
+        let obj2 = JSON.parse(obj1);
+        console.log(obj2)
     </script>
 </body>
 </html>

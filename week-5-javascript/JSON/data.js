@@ -40,7 +40,7 @@ console.log(totalPrice);
 // Calculate 20% discount ON All Available product 
 
 for(let i = 0; i < data.products.length; i++){
-  
+
   if(data.products[i].isAvailable){
 
     console.log(data.products[i].name+ " " + "Price : " + data.products[i].price)
