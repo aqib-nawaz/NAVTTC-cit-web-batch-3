@@ -1,0 +1,21 @@
+-emp    
+    -Sno 
+        2
+    -Age 
+        32
+    -Name
+        "Rajesh"
+    -Salary
+          10000
+    -Designation
+            "Software Engineer"
+    -Location
+            "Bangalore"
+    -DOB
+        "12/12/1990"
+    -DOJ  
+      "12/12/2017"
+
+
+
+
