@@ -22,7 +22,7 @@
 
 // (marks > 30) ? console.log("Pass") : console.log("You are Fail");
 
-// // switch case  
+// // switch case
 // switch (marks) {
 //     case 10:
 //         console.log("Equal to 10")
@@ -37,8 +37,6 @@
 //     default:
 //         console.log("Not equal to 10, 20, 30");
 // }
-
-
 
 // var data = {
 //   marks: 45,
@@ -66,10 +64,6 @@
 //   console.log("YOu are eligible for scholarship");
 // }
 
-
-
-
-
 // var studData = [
 //   {
 //     marks: 45,
@@ -92,7 +86,7 @@
 //         city: "Mardan",
 //         countary: "Pakistan"
 //       }
-    
+
 //   },
 //   {
 //     marks: 45,
@@ -103,7 +97,7 @@
 //     address:{
 //       city: "Mardan",
 //       country: "Pakistan"
-//     } 
+//     }
 //   }
 
 // ]
@@ -117,40 +111,3 @@
 //   }
 // }
 
-
-// Data Serialization
-    // CSV (comma separated values) //it is considered as single datatype
-    // that is why its manipulation is difficult
-        // S.No, Name, Subject, Designation
-        // 1   , Mansoor, C++ , Lecturer
-    
-    //XML (Extended markup language)
-        //<XML>
-            //<emp>
-                // <sno>1</sno>
-                // <age>31</age>
-                // <sub>C+</sub>
-                // <desig>Lecturer</desig>
-            //</emp>
-        //</XML>
-
-    //YAML(Yet Another Modeling Language)
-        // -emp
-        //     -Sno 
-        //         1
-        //     -Age 
-        //         32
-            
-    // JASON (JavaScript Object Notation)
-        // data = [
-        //     {
-        //         "id" : 201,
-        //         "age" : 31,
-        //         "Designation" : "Lecturer"
-        //     },
-        //     {
-        //         "id" : 201,
-        //         "age" : 31,
-        //         "Designation" : "Lecturer"
-        //     }
-        // ]
