@@ -32,14 +32,18 @@ let totalPrice = 0;
 let discountPrice;
 for(let i = 0; i < data.products.length; i++){
     totalPrice += data.products[i].price
+}
 
-    if(data.products[i].isAvailable){
-        
-        console.log(data.products[i].name+ " " + "Price : " + data.products[i].price)
+console.log(totalPrice);
 
-        data.products[i].price -= (data.products[i].price*20) /100;
+// Challage 2 
+// Calculate 20% discount of All Available product 
 
-        console.log(data.products[i].name+" Discount Price : " + data.products[i].price)
-    }
+for(let i = 0; i < data.products.length; i++){
+  if(data.products[i].isAvailable){
 
+    console.log(data.products[i].name+ " " + "Price : " + data.products[i].price)
+    data.products[i].price -= (data.products[i].price*20) /100;
+    console.log(data.products[i].name+" Discount Price : " + data.products[i].price)
+  }
 }
