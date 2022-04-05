@@ -40,80 +40,82 @@
 
 
 
-var data = {
-  marks: 45,
-  name : "Abdus Samad",
-  gpa: 3.7,
-  isPass: true,
-  friends : ["Aqib", "Hayat"],
-  address:{
-    city: "Mardan",
-    countary: "Pakistan"
-  }
+// var data = {
+//   marks: 45,
+//   name : "Abdus Samad",
+//   gpa: 3.7,
+//   isPass: true,
+//   friends : ["Aqib", "Hayat"],
+//   address:{
+//     city: "Mardan",
+//     countary: "Pakistan"
+//   }
 
-}
+// }
 
 // Challenges 1
 
 // if isPass is true display all friends
-if(data.isPass){
-  console.log(data.friends)
-}
+// if(data.isPass){
+//   console.log(data.friends)
+// }
 
 // Challenges 2
 // if isPass is true, gpa > 3.5, and city  = Mardan display "You are eligible for scholarship"
-if((data.isPass) && (data.gpa > 3.5) && (data.address.city == "Mardan") ){
-  console.log("YOu are eligible for scholarship");
-}
+// if((data.isPass) && (data.gpa > 3.5) && (data.address.city == "Mardan") ){
+//   console.log("YOu are eligible for scholarship");
+// }
 
 
 
 
 
-var studData = [
-  {
-    marks: 45,
-    name : "Abdus Samad",
-    gpa: 3.7,
-    isPass: true,
-    friends : ["Aqib", "Hayat"],
-    address:{
-      city: "DIK",
-      countary: "Pakistan"
-    }
-  },
-  {
-      marks: 45,
-      name : "Abdus Samad",
-      gpa: 3.7,
-      isPass: false,
-      friends : ["Aqib", "Hayat"],
-      address:{
-        city: "Mardan",
-        countary: "Pakistan"
-      }
+// var studData = [
+//   {
+//     marks: 45,
+//     name : "Abdus Samad",
+//     gpa: 3.7,
+//     isPass: true,
+//     friends : ["Aqib", "Hayat"],
+//     address:{
+//       city: "DIK",
+//       countary: "Pakistan"
+//     }
+//   },
+//   {
+//       marks: 45,
+//       name : "Abdus Samad",
+//       gpa: 3.7,
+//       isPass: false,
+//       friends : ["Aqib", "Hayat"],
+//       address:{
+//         city: "Mardan",
+//         countary: "Pakistan"
+//       }
     
-  },
-  {
-    marks: 45,
-    name : "Abdus Samad",
-    gpa: 3.7,
-    isPass: true,
-    friends : ["Aqib", "Hayat"],
-    address:{
-      city: "Mardan",
-      countary: "Pakistan"
-    }
+//   },
+//   {
+//     marks: 45,
+//     name : "Abdus Samad",
+//     gpa: 3.7,
+//     isPass: true,
+//     friends : ["Aqib", "Hayat"],
+//     address:{
+//       city: "Mardan",
+//       countary: "Pakistan"
+//     }
   
-  }
+//   }
 
-]
+// ]
 // // Challenge 3
 
 // Display  cities of all the students who are passed
-for (let i = 0; i< studData.length; i++){
+// for (let i = 0; i< studData.length; i++){
 
-  if(studData[i].isPass){
-    console.log(studData[i].address.city)
-  }
-}
+//   if(studData[i].isPass){
+//     console.log(studData[i].address.city)
+//   }
+// }
+
+
