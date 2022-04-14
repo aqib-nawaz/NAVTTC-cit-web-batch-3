@@ -64,3 +64,7 @@ console.log(newMarks)
 let full = newMarks.fill(10,0,10)
 
 
+list = [10,10,10,45,66,77,88]
+
+list.fill(10,0,10)
+list.some(10)
