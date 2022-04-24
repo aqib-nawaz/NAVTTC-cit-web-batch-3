@@ -111,3 +111,18 @@
 //   }
 // }
 
+const obj = {
+        name: 'Abdus Samad',
+        age: 23,
+        isPass: true,
+        friends: ['Abdus Samad', 'Abdul Qadir', 'Abdul Samad'],
+        address: {
+            city: 'Mardan',
+        }
+    }
+
+    console.log(Object.keys(obj));
+    
+    for(let key in obj){
+        console.log(key);
+    }
