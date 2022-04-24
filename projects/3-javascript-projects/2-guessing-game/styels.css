@@ -1,0 +1,62 @@
+*, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+#about{
+    margin-bottom: 20px;
+}
+#game-type{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+#game-type #select-catgeory, #main #input {
+    width: 170px;
+    height: 35px;
+    font-size: 18px;
+    padding: 4px;
+    outline: none;
+    border: none;
+}
+#main{
+    padding: 20px;
+    display: flex;
+}
+#main #input{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 210px;
+}
+#main span{
+    font-size: 25px;
+    margin-right: 10px;
+    text-align: center;
+}
+#main #check-button{
+    width: 70px;
+    height: 2.1875rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#message{
+    display: block;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styels.css">
+    <title>Guessing Game</title>
+</head>
+<body>
+    <div id ="container">
+
+        <div id ="about">
+            <h1>Number Guessing Game</h1>
+            <h4>Game rules are <a href="./README.md">here</a></h4>
+        </div>
+
+        <div id ="game-type">
+            <select name="select-category" id="select-catgeory">
+                <option value="">Select category</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <h4>Turns left : <span id="trie">5</span></h4>
+        </div>
+
+        <div id ="main">
+            <span>🤔</span><input type="number" id="input" placeholder="Guess a number">
+            <button id="check-button">
+                Check
+            </button>
+        </div>
+        <div id="message-container">
+            <h4 class="message">Your are correct!! you win</h4>
+        </div>
+
+        
+
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
