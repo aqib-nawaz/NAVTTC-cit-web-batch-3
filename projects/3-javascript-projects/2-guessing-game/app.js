@@ -1,5 +1,8 @@
 let numberToGuess = Math.ceil(Math.random() * 100);
-let turn = document.getElementById('turns');
+console.log(numberToGuess)
+
+let turns = document.getElementById('turns');
+let message = document.getElementById('message')
 let category = document.getElementById('select-category');
 
 let button = document.getElementById('check-button')
@@ -14,14 +17,60 @@ let onCategorySelect = () => {
 
 
     if(categoryVal === "easy"){
-        turn.textContent = 7;
+        turns.textContent = 7;
+
     } else if(categoryVal == "medium"){
-        turn.textContent = 5;
+        turns.textContent = 5;
+
     } else if( categoryVal === "hard"){
-        turn.textContent = 3;
+        turns.textContent = 3;
+
     } else {
-        turn.textContent = "";
+        turns.textContent = "";
         button.disabled = true;
     }
 }
 category.onchange = onCategorySelect;
+
+
+let showMessage = (value) => {
+    let enteredNumber = value;
+
+    if(enteredNumber == numberToGuess){
+        message.innerHTML = "You are correct !!! you win";
+        message.style.color = 'green';
+
+    } else if( enteredNumber > numberToGuess){
+        message.innerHTML = "wrong..!!! you are ahead, please comes down";
+        message.style.color = 'red';
+
+    } else if(enteredNumber < numberToGuess){
+        message.innerHTML = "wrong..!!! you are below, please goes up";
+        message.style.color = 'red';
+
+    } else {
+        message.innerHTML = "You entered invalid number";
+        message.style.color = 'gray';
+    }
+}
+
+
+let decrementTurn = () => {
+    turns.textContent--;
+
+    if(turns.textContent == 0){
+        message.innerHTML = "No turns left..!! <span class='lost' style='color:red'>Your Lost</span>";
+        message.style.color = '#F7B217';
+        button.disabled = true;
+    }
+
+    
+}
+
+button.onclick = function () {
+    let inputNumber = document.getElementById('input').value;
+
+    showMessage(inputNumber)
+    decrementTurn()
+    document.getElementById('input').value ='';
+}
