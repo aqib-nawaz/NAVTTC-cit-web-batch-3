@@ -24,4 +24,3 @@ document.getElementById('add').onclick = function () {
 
     creatElement(inputVal)
 }
-
