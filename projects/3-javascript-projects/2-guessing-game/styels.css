@@ -20,6 +20,15 @@
 #about{
     margin-bottom: 20px;
 }
+#about h4{
+    color : #7476ffd4;
+}
+#about h1{
+    color: #363636cf;
+}
+#about h4 a{
+    color : #a629ff;
+}
 #game-type{
     display: flex;
     width: 100%;
@@ -28,7 +37,8 @@
     margin-bottom: 20px;
     padding: 20px;
 }
-#game-type #select-catgeory, #main #input {
+
+#game-type #select-category, #main #input {
     width: 170px;
     height: 35px;
     font-size: 18px;
