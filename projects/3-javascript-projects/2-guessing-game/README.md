@@ -9,4 +9,4 @@
 
 ### Final Result
 
-[<img src="" width="50%">](./final-result.mp4)
+[<img src="./project-final-result-screeshot.png" width="50%">]
