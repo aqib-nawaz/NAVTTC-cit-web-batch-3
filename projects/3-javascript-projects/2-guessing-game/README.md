@@ -6,3 +6,7 @@
 - If the entered number is less than what computer has guessed, you will be informed to go up
 - If you guess the number correctly, you win.
 - If you guess the number incorrectly, you lose.
+
+### Final Result
+
+[<img src="" width="50%">](./final-result.mp4)
