@@ -1,0 +1,70 @@
+<!--
+jQuery selectors allow you to select and manipulate HTML element(s).
+
+jQuery selectors are used to "find" (or select) HTML elements based on their name, id, 
+classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, 
+and in addition, it has some own custom selectors.
+
+All selectors in jQuery start with the dollar sign and parentheses: $().
+
+The element Selector
+$("p")
+
+The #id Selector
+$("#test")
+
+The .class Selector
+$(".test")
+
+====================================================================================
+    $("*") 	                    Selects all elements 	
+    $(this) 	                Selects the current HTML element 	
+    $("p.intro") 	            Selects all <p> elements with class="intro" 	
+    $("p:first") 	            Selects the first <p> element 	
+    $("ul li:first") 	        Selects the first <li> element of the first <ul> 	
+    $("ul li:first-child") 	    Selects the first <li> element of every <ul> 	
+    $("[href]") 	            Selects all elements with an href attribute 	
+    $("a[target='_blank']") 	Selects all <a> elements with a target attribute value equal to "_blank" 	
+    $("a[target!='_blank']") 	Selects all <a> elements with a target attribute value NOT equal to "_blank" 	
+    $(":button") 	            Selects all <button> elements and <input> elements of type="button" 	
+    $("tr:even") 	            Selects all even <tr> elements 	
+    $("tr:odd") 	            Selects all odd <tr> elements
+====================================================================================
+
+-->
+
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    </head>
+    
+    <body>
+
+    <!--
+        Basic syntax is: $(selector).action()
+
+    A $ sign to define/access jQuery
+    A (selector) to "query (or find)" HTML elements
+    A jQuery action() to be performed on the element(s)
+
+    -->
+
+    <p class="intro">Welcome to JQuery Lecture</p>
+    <p id = "p1" onclick="$(this).hide()">This is another paragraph.</p>
+
+    <button name = "btnHide" id="btnHide">Hide</button>
+
+    <script>
+         $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+                // $("p.intro").hide();
+             });
+
+
+        }); 
+
+    </script>
+    </body>
+</html>

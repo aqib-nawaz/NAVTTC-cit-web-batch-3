@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#w3s").attr({
+      "href" : "https://www.w3schools.com/jquery/",
+      "title" : "W3Schools jQuery Tutorial"
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<p><a href="../index.html" title="some title" id="w3s">W3Schools.com</a></p>
+
+<button>Change href and title</button>
+
+<p>Mouse over the link to see that the href attribute has changed and a title attribute is set.</p>
+
+</body>
+
+</html>

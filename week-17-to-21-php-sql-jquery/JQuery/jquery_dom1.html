@@ -1,0 +1,43 @@
+<!--
+    Get Content - text(), html(), and val()
+
+Three simple, but useful, jQuery methods for DOM manipulation are:
+
+    text() - Sets or returns the text content of selected elements
+    html() - Sets or returns the content of selected elements (including HTML markup)
+    val() - Sets or returns the value of form fields
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#test").html("Hello <b>World!</b>");
+        alert("Text: " + $("#test").text());
+    });
+    $("#btn2").click(function(){
+        alert("HTML: " + $("#test").html());
+    });
+    $("#btn3").click(function(){
+        $("#textName").val("Tayyab");
+        alert("Value: " + $("#textName").val());
+    });
+});
+</script>
+</head>
+<body>
+
+<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+<p>Name: <input type="text" id="textName" value="Mickey Mouse"></p>
+
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
+<button id="btn3">Show Value</button>
+
+</body>
+
+</html>

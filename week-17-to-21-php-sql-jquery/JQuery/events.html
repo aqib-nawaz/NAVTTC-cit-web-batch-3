@@ -1,0 +1,61 @@
+<!--
+Events:
+============================
+Mouse Events 	Keyboard Events 	Form Events 	Document/Window Events
+===========================================================================
+click 	        keypress 	        submit 	            load
+dblclick 	    keydown 	        change 	            resize
+mouseenter 	    keyup 	            focus 	            scroll
+mouseleave 	  	                    blur                unload
+
+
+$("p").click(function(){
+  // action goes here!!
+});
+
+-->
+
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    </head>
+    
+    <body>
+
+    <!--
+
+
+    -->
+
+    <p class="intro">Welcome to JQuery Lecture</p>
+    <p>This is another paragraph.</p>
+
+    <button>Click Me</button>
+
+    <script>
+         $(document).ready(function(){
+            $("button").click(function(){
+                // $("p").hide();
+                $("p").hide(2000, function(){ alert('Done');});
+                // $("p").toggle();
+             });
+
+
+            $("p").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function(){
+                    $(this).css("background-color", "yellow");
+                }
+            }); 
+
+        }); 
+
+    </script>
+    </body>
+</html>
