@@ -1,0 +1,23 @@
+Advanced JS Topics Covered When Required in React:
+Variable Hoisting
+Function Hoisting
+Let
+Const
+Template Literals
+Destructuring (Array and Object)
+Rest operator
+Spread operator
+Object Literal Shorthand
+For in Loop
+For of Loop
+Object.keys
+Object.values
+Object.assign
+Default Values
+Set
+Local storage
+Session storage
+Try, catch and throw
+Conditional (Ternary) Operators
+Short circuit evaluation ( && || )
+Async JS (promises, async/await, callbacks)

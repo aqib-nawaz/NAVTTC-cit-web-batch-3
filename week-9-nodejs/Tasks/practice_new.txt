@@ -1,0 +1,134 @@
+const news = require("../data/others/news.json");
+// Tasks
+
+// 1. Name all the sources with null ids.
+
+news.articles.forEach((article) => {
+    if (article.source.id == null) {
+        // console.log("id : " +article.source.id +", Name : "+ article.source.name)
+    }
+});
+
+
+
+
+// 2. Name all the sources with null authors.
+
+let srcWithNullAuthors = news.articles.filter((article) => {
+    if (article.author == null) {
+        return article.source.name;
+    }
+}); //.forEach((article) => console.log(article.source.name));
+
+
+
+
+
+// 3. Create a new list with any of the keys that have null values.
+
+let newList = news.articles.filter((articleObj) => {
+    for (let key in articleObj) {
+        if (articleObj[key] == null) {
+            return articleObj;
+        }
+}
+});
+// console.log(newList);
+
+
+
+
+// 4. Print the title, content and description of the latest article.
+
+let calcDate = (date) => {
+    const d = new Date(date);
+    const year = d.getFullYear();
+    const month = d.getMonth();
+    const day = d.getDate();
+    const hours = d.getHours();
+    const minutes = d.getMinutes();
+    const seconds = d.getSeconds();
+
+    return `${year}/${month}/${day} ${hours}:${minutes}:${seconds}`;
+  //return date format : '2022/3/4 18:53:0'
+};
+
+let printArticle = (articlePubDate, singleArticleDate, article, articleType) => {
+
+    if (calcDate(articlePubDate) == singleArticleDate) {
+
+        console.log(`\n*****${articleType} Challenge*******\n`);
+        console.log(`Title : \n${article.title}`);
+        console.log(`\nContent : \n${article.content}`);
+        console.log(`\nDescription:\n${article.description}`);
+    }
+};
+
+let latestArticleDate = news.articles
+  .map( (article) => {return calcDate(article.publishedAt)} )
+  .sort( (a, b) => b - a )[0];
+
+news.articles.filter((article) => {
+  // printArticle(article.publishedAt, latestArticleDate, article, "Latest Article")
+});
+
+
+
+
+// 5. Print the title, content and description of the oldest article.
+
+const articlesPublishedDate = news.articles
+  .map( (article) => { return calcDate(article.publishedAt)} )
+  .sort( (a, b) => b - a );
+
+const oldestArticleDate =
+  articlesPublishedDate[articlesPublishedDate.length - 1];
+
+news.articles.filter((article) => {
+  // printArticle(article.publishedAt, oldestArticleDate, article, "Oldest Article")
+});
+
+
+
+
+
+
+// 6. Print the article with the longest title.
+
+let longestTitle = news.articles[0].title.length;
+for (let i = 0; i < news.articles.length; i++) {
+    if (news.articles[i].title.length > longestTitle) {
+        longestTitle = news.articles[i].title.length;
+    }
+}
+
+const articleWithLongestTitle = news.articles.filter((article) => {
+    return article.title.length == longestTitle;
+});
+
+// console.log(articleWithLongestTitle)
+
+
+
+
+
+// 7. Print all the articles from the same source.
+
+var articlesSources = news.articles
+    .map((article) => article.source.name)
+    .sort()
+    .filter((item, index, arr) => arr.indexOf(item) !== arr.lastIndexOf(item))
+    .filter((item, index, arr) =>  index == arr.indexOf(item))
+
+    console.log(articlesSources)
+    
+    for(let i = 0; i < articlesSources.length; i++){
+      for(let j = 0; j < news.articles.length; j++){
+        if(news.articles[j].source.name == articlesSources[i]){
+          // console.log(news.articles[j])
+        }
+      }
+    }
+
+
+    

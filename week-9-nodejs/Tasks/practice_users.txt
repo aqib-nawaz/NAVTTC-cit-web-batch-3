@@ -1,0 +1,197 @@
+const users = require('../data/others/users.json')
+
+// 1. Create a function that returns the name of the user with the highest name length.
+//    If there are two or more users with the same length, return the one with the lowest id.
+
+
+
+const userFullName = (user) => `${user.firstname} ${user.lastname}`;
+
+
+let highestLengthName = () => {
+    let longestName = userFullName(users[0].name);
+
+    for(let i = 0; i < users.length; i++){
+        if(userFullName(users[i].name).length > longestName.length){
+            longestName = userFullName(users[i].name);
+        }
+    }
+    return longestName
+}
+
+// console.log(`Highest Length Name : ${highestLengthName()}`)
+
+
+
+
+
+
+
+// 2. Create a function that returns the name of the user with the shortest name.
+//    If there are two or more users with the same length, return the one with the lowest id.
+
+let namesArr = users.map((user) => userFullName(user.name))
+let namesLengthArr = users.map((user) => userFullName(user.name).length)
+.sort((a, b) => a - b)
+
+let shortestName = () => {
+
+    for(let i = 0; i < users.length; i++){
+        if(namesArr[i].length === namesLengthArr[0]){
+            return namesArr[i]
+        }
+    }
+}
+
+// console.log(`Lowest Length Name : ${shortestName()}`)
+
+
+
+
+
+
+
+
+
+
+// 3. Create a function that returns the name of the user with the highest id.
+
+let usersArr = users.map((user) => {
+    return user.id
+})
+
+const userNameWithHighestId = () =>{
+    for(let i = 0; i < users.length; i++){
+        if(users[i].id === usersArr[usersArr.length-1]){
+            return userFullName(users[i].name)
+        }
+    }
+}
+
+// console.log(`User with Highest Id : ${userNameWithHighestId()}`)
+
+
+
+
+
+
+// 4. Create a function that returns the name of the user with the lowest id.
+
+const userNameWithLowestId = () =>{
+    for(let i = 0; i < users.length; i++){
+        if(users[i].id === usersArr[0]){
+            return userFullName(users[i].name)
+        }
+    }
+}
+
+// console.log(`User with Lowest Id : ${userNameWithLowestId()}`)
+
+
+
+
+// 5. Create a function that returns the name of the user with the highest name length.
+    
+//same as 
+
+// 6. Create a function that returns the name of the user with the lowest name length.
+
+//same as above
+
+
+
+
+
+// 7. Create a function that returns the name, email and address along with lat, long of the user.
+
+
+let getUserDetails = () => {
+    let user = {}
+    let userDetailsArr = [];
+
+    for(let i = 0; i < users.length; i++){
+        user = {
+            "Name" : userFullName(users[i].name),
+            "Email" : users[i].email,
+            "Address" : {
+                "city" : users[i].address.city,
+                "street" : users[i].address.street,
+                "zip" : users[i].address.zipcode
+            },
+            "Latitude" :  users[i].address.geolocation.lat,
+            "Longitude" : users[i].address.geolocation.long
+        }
+
+        userDetailsArr.push(user);
+        user = {};
+    }
+
+    return userDetailsArr;
+}
+
+// console.log(getUserDetails())
+
+//2nd Method
+let userData = users.map((user) =>{
+    return { 
+        "Name" : userFullName(user.name),
+        "Email" : user.email,
+        "Address" : {
+                "city" : user.address.city,
+                "street" : user.address.street
+            },
+        "Latitude" : user.address.geolocation.lat,
+        "Longitude" : user.address.geolocation.long
+    }
+})
+// console.log(userData)
+
+
+// 8. Create a function that checks if there are any user from the same city.
+
+
+let city = users.map((user) => { return user.address.city})
+
+let checkUserForSameCity = (city) => {
+    let sameCity = []
+    
+    for(let i = 0; i < city.length; i++){
+        if(city.indexOf(city[i]) !== city.lastIndexOf(city[i])){
+            sameCity.push(`Same city : "${city[i]}"`)
+        }
+    }
+
+    return sameCity.filter((item, index, arr) => index == arr.indexOf(item))
+}
+console.log(checkUserForSameCity(city))
+
+
+
+
+
+// 9. Create a function to check if there is any invalid email in the users list. (use regex)
+
+
+let regex = /^([a-zA-Z0-9\d\.-]+)@([a-zA-Z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
+
+let validateEmail = () => {
+    let invalidEmails = [];
+    for(let i = 0; i < users.length; i++){
+        if(!regex.test(users[i].email)){
+            invalidEmails.push(`"${users[i].email}" : is Invalid`)
+        }
+
+    }
+    return invalidEmails;
+}
+// console.log(validateEmail())
+
+
+
+
+
+
+
+
+
+//
