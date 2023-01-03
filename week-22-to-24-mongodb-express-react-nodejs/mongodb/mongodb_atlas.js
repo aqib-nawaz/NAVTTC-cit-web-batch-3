@@ -2,7 +2,7 @@ var MongoClient = require('mongodb').MongoClient;
 var http = require('http');
 
 // var url = "mongodb://localhost:27017/";
-var url = "mongodb+srv://aqib:aqib321@cluster0.ec10a26.mongodb.net/?retryWrites=true&w=majority";
+var url = ""/?retryWrites=true&w=majority";
 
 MongoClient.connect(url, function(err, db) {
     if (err) throw err;
