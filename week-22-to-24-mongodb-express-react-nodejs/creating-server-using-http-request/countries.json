@@ -1,0 +1,26 @@
+[
+    {
+        "country": "Afghanistan",
+        "population": "10 Crore",
+        "capital" : "kabul",
+        "province" : 36
+    },
+    {   
+        "country": "Pakistan",
+        "population": "26 Crore",
+        "capital" : "Islamabad",
+        "province" : 4
+    },
+    {
+        "country": "India",
+        "population": "136 Crore",
+        "capital" : "Mumbai",
+        "province" : 10
+    },
+    {
+        "country": "Bangladesh",
+        "population": "12 Crore",
+        "capital" : "Dhaka",
+        "province" : 20
+    }
+]
